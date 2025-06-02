@@ -3,8 +3,11 @@ yfinance
 pandas
 numpy
 scikit-learn
-keras
-matplotlib
 joblib
+matplotlib
 statsmodels
-tensorflow
+
+# Compatible Keras + TensorFlow (streamlit cloud friendly)
+tensorflow==2.12.0
+keras==2.12.0
+ml-dtypes==0.2.0
