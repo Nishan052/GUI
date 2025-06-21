@@ -160,12 +160,14 @@ if st.button("Predict Open & Close for Selected Date"):
                     actual = float(actual_val.values[0]) if not actual_val.empty else None
 
                     summary_rows.append({
-                        "Type": col,
+                         "Type": col,
+                        "RMSE": f"{rmse:.2f}",
                         "RMSE Range": f"{lower_rmse:.2f} - {upper_rmse:.2f}",
+                        "MAPE": f"{mape:.2f}%",
                         "MAPE Range": f"{lower_mape:.2f} - {upper_mape:.2f}",
                         "Predicted": f"{pred:.2f}",
                         "Actual": f"{actual:.2f}" if actual is not None else "N/A"
-                    })
+                        })
 
             summary_df = pd.DataFrame(summary_rows)
             st.markdown("### Prediction Summary Table")
