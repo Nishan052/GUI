@@ -8,6 +8,6 @@ matplotlib
 statsmodels
 
 # Compatible Keras + TensorFlow (streamlit cloud friendly)
-tensorflow==2.15.0
-keras==2.15.0
+tensorflow==2.13.1
+keras==2.13.1
 ml-dtypes==0.2.0
