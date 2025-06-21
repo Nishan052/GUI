@@ -46,7 +46,7 @@ tomorrow = today + timedelta(days=1)
 selected_date = st.date_input(
     "Select prediction date",
     value=today,
-    min_value=datetime(2007, 1, 1).date(),   # or your data start date
+    min_value=datetime(2008, 1, 1).date(),   # or your data start date
     max_value=tomorrow
 )
 # Check for weekend selection
