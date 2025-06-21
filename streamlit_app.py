@@ -19,8 +19,8 @@ ARIMA_MODEL_PATHS = {
     "Close": os.path.join(BASE_DIR, "models", "arima_model_close.pkl"),
 }
 LSTM_MODEL_PATHS = {
-    "Open": os.path.join(BASE_DIR, "models", "lstm_model_open.h5"),
-    "Close": os.path.join(BASE_DIR, "models", "lstm_model_close.h5"),
+    "Open": os.path.join(BASE_DIR, "models", "lstm_model_open.keras"),
+    "Close": os.path.join(BASE_DIR, "models", "lstm_model_close.keras"),
 }
 LOG_PATH = os.path.join(BASE_DIR, "streamlit_app.log")
 
