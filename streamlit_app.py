@@ -44,7 +44,7 @@ today = datetime.today().date()
 tomorrow = today + timedelta(days=1)
 
 selected_date = st.date_input(
-    "Select prediction date (based on historical data)",
+    "Select prediction date",
     value=today,
     min_value=datetime(2007, 1, 1).date(),   # or your data start date
     max_value=tomorrow
